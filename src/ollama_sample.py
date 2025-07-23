@@ -1,10 +1,22 @@
 import requests
 import json
 
+# これでは取得できなかった
 # Ollama APIエンドポイント
-url = "http://192.168.0.102:11434/api/generate"
+# url = "http://192.168.0.102:11434/api/show"
+# payload = {"name": "llama3:70b"}
+
+# response = requests.post(url, json=payload)
+# if response.ok:
+#     data = response.json()
+#     print("Model size (bytes):", data.get("size"))
+# else:
+#     print("Error:", response.text)
+
+# print("-------------------------------")
 
 # リクエストデータ
+url = "http://192.168.0.102:11434/api/generate"
 payload = {
     "model": "llama3:70b",  # 使用するモデル名
     "prompt": "こんにちは、Ollama！"
